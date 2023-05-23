@@ -1,6 +1,7 @@
 import { NextPage } from 'next';
+import Layout from "../components/layout/Layout";
 
 const AboutUsPage: NextPage = () => {
-    return <div>About US</div>
+    return <Layout>About US</Layout>
 }
 export default AboutUsPage;
