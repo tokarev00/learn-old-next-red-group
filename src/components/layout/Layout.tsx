@@ -1,10 +1,11 @@
 import {FC, PropsWithChildren} from "react";
 import Header from '../layout/header/Header'
-const Layout: FC<PropsWithChildren<unknown>> = ({children}) => {
+import Meta from "../seo/Meta";
+const Layout: FC<PropsWithChildren<IMeta>> = ({children, title, description}) => {
     return (
-        <div>
+        <Meta title={title} description={description} >
             <Header/>
             {children}
-        </div>)
+        </Meta>)
 }
 export default Layout;
